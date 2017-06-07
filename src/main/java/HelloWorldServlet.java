@@ -16,6 +16,9 @@ public class HelloWorldServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         String name = request.getParameter("name");
+//        if (name = null){
+//
+//        }
         hitCount++;
         PrintWriter out = response.getWriter();
         out.println("<h1 align=\"center\">Hello, " + name + "!</h1>\n" + "<h3 align=\"center\">Hit Counter</h3>\n" + "<h2 align=\"center\">" + hitCount + "</h2>\n");
