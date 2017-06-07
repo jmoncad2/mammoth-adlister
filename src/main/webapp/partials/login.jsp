@@ -11,7 +11,7 @@
     <title>Login Form</title>
 </head>
 <body>
-<form method="post">
+<form action="login.jsp" method="post">
     Username:<input type="text" name="user">
     Password:<input type="password" name="pass">
     <input type="submit" value="Submit">
